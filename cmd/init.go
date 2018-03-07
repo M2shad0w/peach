@@ -21,10 +21,10 @@ import (
 	"strings"
 
 	"github.com/Unknwon/com"
-	"github.com/codegangsta/cli"
+	"github.com/urfave/cli"
 	"gopkg.in/ini.v1"
 
-	"github.com/peachdocs/peach/modules/bindata"
+	"github.com/M2shad0w/peach/modules/bindata"
 )
 
 var New = cli.Command{
