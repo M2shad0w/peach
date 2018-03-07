@@ -19,15 +19,15 @@ import (
 	"net/http"
 
 	"github.com/Unknwon/log"
-	"github.com/codegangsta/cli"
 	"github.com/go-macaron/i18n"
 	"github.com/go-macaron/pongo2"
+	"github.com/urfave/cli"
 	"gopkg.in/macaron.v1"
 
-	"github.com/peachdocs/peach/models"
-	"github.com/peachdocs/peach/modules/middleware"
-	"github.com/peachdocs/peach/modules/setting"
-	"github.com/peachdocs/peach/routers"
+	"github.com/M2shad0w/peach/models"
+	"github.com/M2shad0w/peach/modules/middleware"
+	"github.com/M2shad0w/peach/modules/setting"
+	"github.com/M2shad0w/peach/routers"
 )
 
 var Web = cli.Command{

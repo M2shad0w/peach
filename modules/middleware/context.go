@@ -19,7 +19,7 @@ import (
 
 	"gopkg.in/macaron.v1"
 
-	"github.com/peachdocs/peach/modules/setting"
+	"github.com/M2shad0w/peach/modules/setting"
 )
 
 type Context struct {

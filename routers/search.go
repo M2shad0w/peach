@@ -15,9 +15,9 @@
 package routers
 
 import (
-	"github.com/peachdocs/peach/models"
-	"github.com/peachdocs/peach/modules/middleware"
-	"github.com/peachdocs/peach/modules/setting"
+	"github.com/M2shad0w/peach/models"
+	"github.com/M2shad0w/peach/modules/middleware"
+	"github.com/M2shad0w/peach/modules/setting"
 )
 
 func Search(ctx *middleware.Context) {
