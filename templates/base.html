@@ -7,6 +7,7 @@
 		<link rel="shortcut icon" href="/img/favicon.ico" />
 		<link href="/css/semantic.min.css?v={{AppVer}}" rel="stylesheet" />
 		<link href="/css/peach.css?v={{AppVer}}" rel="stylesheet" />
+		<link href="/css/back2top.css" rel="stylesheet" />
 
 		{% if Asset.CustomCSS %}
 			<link href="{{Asset.CustomCSS}}" rel="stylesheet" />
@@ -28,10 +29,24 @@
 			<link rel="stylesheet" href="/css/highlight-8.7/default.css">
 		{% endif %}
 		<script src="/js/highlight-8.7.pack.js"></script>
-
 		<title>{% block title %}{{Title}}{% endblock %}</title>
 	</head>
 	<body>
 		{% block body %}{% endblock %}
 	</body>
+	<script type='text/javascript'>(function() {
+	    var $backToTopTxt = "返回顶部", $backToTopEle = $('<div class="backToTop"></div>').appendTo($("body"))
+	        .text($backToTopTxt).attr("title", $backToTopTxt).click(function() {
+	            $("html, body").animate({ scrollTop: 0 }, 120);
+	    }), $backToTopFun = function() {
+	        var st = $(document).scrollTop(), winh = $(window).height();
+	        (st > 0)? $backToTopEle.show(): $backToTopEle.hide();
+	        //IE6下的定位
+	        if (!window.XMLHttpRequest) {
+	            $backToTopEle.css("top", st + winh - 166);
+	        }
+	    };
+	    $(window).bind("scroll", $backToTopFun);
+	    $(function() { $backToTopFun(); });
+	})();</script>
 </html>

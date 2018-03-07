@@ -6,6 +6,22 @@ Peach is a web server for multi-language, real-time synchronization and searchab
 
 #### Current version: 0.9.2
 
+### build from source
+
+```
+govendor init
+
+govendor list
+
+  m golang.org/x/crypto/pbkdf2                       
+  m golang.org/x/text/language
+
+// 通过代理中转一下包
+git clone https://go.googlesource.com/crypto $GOPATH/src/golang.org/x/crypto
+git clone https://go.googlesource.com/text $GOPATH/src/golang.org/x/text
+
+```
+
 ## Getting Help
 
 - [Getting Started](http://peachdocs.org/docs/intro/getting_started)
