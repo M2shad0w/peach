@@ -20,6 +20,15 @@ govendor list
 git clone https://go.googlesource.com/crypto $GOPATH/src/golang.org/x/crypto
 git clone https://go.googlesource.com/text $GOPATH/src/golang.org/x/text
 
+cd $GOPATH/src/M2shad0w/peach
+make
+```
+
+## develop
+
+```
+修改资源需要 重新生成 bindata
+
 ```
 
 ## Getting Help
