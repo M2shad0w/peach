@@ -20,7 +20,7 @@ import (
 	"gopkg.in/ini.v1"
 	"gopkg.in/macaron.v1"
 
-	"github.com/peachdocs/peach/modules/bindata"
+	"github.com/M2shad0w/peach/modules/bindata"
 )
 
 type NavbarItem struct {
