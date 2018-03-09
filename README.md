@@ -8,6 +8,8 @@ Peach is a web server for multi-language, real-time synchronization and searchab
 
 ### build from source
 
+* 依赖 upx, `sudo apt-get install upx`, 用于压缩
+
 ```
 govendor init
 
@@ -28,7 +30,6 @@ make
 
 ```
 修改资源需要 重新生成 bindata
-
 ```
 
 ## Getting Help
